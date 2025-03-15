@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aveenash Kumar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-green-300 to-blue-300 text-black">
+    
+    <nav class="fixed top-0 w-full bg-black bg-opacity-80 text-white py-4 shadow-lg z-10">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a class="text-xl font-bold" href="#" onclick="showSection('home')">Aveenash Kumar</a>
+            <ul class="flex space-x-6">
+                <li><a class="hover:text-gray-300" href="#" onclick="showSection('home')">Home</a></li>
+                <li><a class="hover:text-gray-300" href="#" onclick="showSection('about')">About</a></li>
+                <li><a class="hover:text-gray-300" href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a class="hover:text-gray-300" href="#" onclick="showSection('resume')">Resume</a></li>
+                <li><a class="hover:text-gray-300" href="#" onclick="showSection('certifications')">Certifications</a></li>
+                <li><a class="hover:text-gray-300" href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="home" class="flex flex-col items-center justify-center h-screen text-center">
+        <img src="mypic.jpg" alt="Aveenash Kumar" class="w-40 h-40 rounded-full border-4 border-white shadow-lg hover:scale-110 transition-transform duration-500">
+        <h1 class="text-4xl font-bold mt-4">Welcome</h1>
+        <p class="text-lg">I am a Software Developer</p>
+    </div>
+    
+    <div id="about" class="hidden container mx-auto text-center py-16">
+        <h2 class="text-3xl font-bold">About Me</h2>
+        <p class="mt-4 text-lg">I am a passionate Software Engineer with a strong background in Java, web development, and problem-solving. 
+           I have experience working on projects that involve full-stack development, API integration, and responsive UI design.
+           My expertise includes technologies like JavaScript, HTML, CSS, React, and SQL. I enjoy learning new technologies and 
+           applying my knowledge to build efficient and scalable applications. I have participated in the Smart India Hackathon 2024 
+           and have a keen interest in open-source contributions. I am always eager to take on new challenges and collaborate with 
+           teams to build innovative solutions.</p>
+    </div>
+    
+    <div id="projects" class="hidden container mx-auto text-center py-16">
+        <h2 class="text-3xl font-bold">Projects</h2>
+        <ul class="mt-4 text-lg text-left list-disc list-inside">
+            <li><strong>Spotify Clone:</strong> A music streaming website with a modern UI using HTML, CSS, and JavaScript.</li>
+            <li><strong>Recipe Website:</strong> A fully responsive recipe-sharing platform.</li>
+            
+            <li><strong>Calculator App:</strong> A simple yet functional calculator using JavaScript.</li>
+            <li><strong>Campus Marketplace:</strong> A web-based platform for students to buy and sell items securely.</li>
+        </ul>
+    </div>
+    
+    <div id="resume" class="hidden container mx-auto text-center py-16">
+        <h2 class="text-3xl font-bold">Resume</h2>
+        <p class="mt-4"><strong>Skills:</strong> Java, JavaScript, HTML, CSS, SQL, Git, GitHub, OOP, React, TypeScript.</p>
+        <p><strong>Education:</strong> BE – Computer Science & Engineering, Excel Engineering College (Anna University), 7.6 CGPA</p>
+        <p><strong>Experience:</strong> Frontend Development Intern at CodeAlpha (Oct 15, 2024 – Nov 15, 2024)</p>
+        <p><strong>Achievements:</strong> Participated in Smart India Hackathon 2024, Member of the English Literary Club.</p>
+    </div>
+    
+    <!-- <div id="certifications" class="hidden container mx-auto text-center py-16">
+        <h2 class="text-3xl font-bold">Certifications</h2>
+        <img src="certificate.jpg" alt="Certification" class="w-3/4 mx-auto rounded-lg shadow-lg mt-4">
+    </div> -->
+    
+    <div id="contact" class="hidden container mx-auto text-center py-16">
+        <h2 class="text-3xl font-bold">Contact</h2>
+        <p class="mt-4">Email: aveenashkumar68@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aveenash-kumar-47a4502aa" class="text-blue-500 hover:underline" target="_blank">Visit My Profile</a></p>
+    </div>
+    
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('#home, #about, #projects, #resume, #certifications, #contact').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+    
+</body>
+</html>
