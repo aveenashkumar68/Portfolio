@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Aveenash Kumar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            background: linear-gradient(-45deg, #6a11cb, #2575fc, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-r from-green-300 to-blue-300 text-black">
+<body class="text-black">
     
     <nav class="fixed top-0 w-full bg-black bg-opacity-80 text-white py-4 shadow-lg z-10">
         <div class="container mx-auto flex justify-between items-center px-6">
@@ -79,6 +98,24 @@
             document.getElementById(sectionId).classList.remove('hidden');
         }
     </script>
+    <style>/* Add this to your existing CSS or within a <style> tag */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        body {
+            background: linear-gradient(-45deg, #6a11cb, #2575fc, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }</style>
     
 </body>
 </html>
